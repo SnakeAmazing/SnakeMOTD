@@ -1,0 +1,8 @@
+config:
+  date: '13/03/22 17:00:00'
+  timezone: "GMT"
+  time-formatted: "%days% días %hours% horas %minutes% minutos"
+  motd: '<gold>¡Pronto empezará un nuevo juego! %newline%</gold> <yellow>En - %time%'
+  time-value-end: '<green>¡El juego ha empezado, únete!</green>'
+  slots: 1000
+  finish-command: maintenance off
