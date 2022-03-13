@@ -50,7 +50,7 @@ public class SimpleCountdownManager implements CountdownManager {
         Date date = null;
 
         try {
-            format.setTimeZone(TimeZone.getTimeZone("timezone"));
+            format.setTimeZone(TimeZone.getTimeZone(config.getUnColoredString("timezone")));
             date = format.parse(stopDate);
         } catch (ParseException exception) {
             exception.printStackTrace();
@@ -74,7 +74,7 @@ public class SimpleCountdownManager implements CountdownManager {
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
         Date date = null;
         try {
-            format.setTimeZone(TimeZone.getTimeZone(config.getString("timezone")));
+            format.setTimeZone(TimeZone.getTimeZone(config.getUnColoredString("timezone")));
             date = format.parse(dateStop);
         } catch (ParseException e) {
             e.printStackTrace();
