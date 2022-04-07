@@ -59,7 +59,7 @@ public class SimpleCountdownManager implements CountdownManager {
         if (date != null) {
             Date current = new Date();
             long diff = date.getTime() - current.getTime();
-            System.out.println(diff + " " + TimeUnit.MILLISECONDS.toMinutes(diff));
+
             if (diff > 0L) {
                 return (int) TimeUnit.MILLISECONDS.toSeconds(diff);
             }
@@ -85,8 +85,6 @@ public class SimpleCountdownManager implements CountdownManager {
         }
 
         long diff = date.getTime() - current.getTime();
-
-        System.out.println(diff + " " + TimeUnit.MILLISECONDS.toMinutes(diff));
 
         if (diff >= 0L) {
             long days = TimeUnit.MILLISECONDS.toDays(diff);
