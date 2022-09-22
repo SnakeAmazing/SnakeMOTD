@@ -1,3 +1,3 @@
 # SnakeMOTD
 
-This a Velocity MOTD plugin which I made to try the Velocity API.
+This a Velocity MOTD plugin which I made a while ago to try the Velocity API.
